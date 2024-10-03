@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="fixed py-4 lg:container mx-auto top-0 left-1/2 transform -translate-x-1/2 w-screen border-red-900"
+    >
+      <section
+        class="flex px-10 justify-between items-center text-xl text-white"
+      >
+        <nav class="hidden md:block">
+          <ul class="flex gap-4">
+            <li>navbar1</li>
+            <li>navbar1</li>
+            <li>navbar1</li>
+            <li>navbar1</li>
+          </ul>
+        </nav>
+        <p>Lorem ipsum dolor</p>
+        <div class="w-8 h-8 md:hidden rounded-full bg-white"></div>
+      </section>
+    </header>
+    <main>
+      <section
+        class="w-full flex items-center px-10 lg:container mx-auto h-screen bg-cover bg-no-repeat bg-center bg-[url('https://images.unsplash.com/photo-1414759030024-7889df4b20f4?q=80&w=2112&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+      >
+        <div
+          class="text-center flex flex-col items-center justify-center md:text-left md:justify-start md:items-start w-full"
+        >
+          <h1 class="text-xl max-w-xl md:text-3xl text-white font-semibold">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed,
+            dignissimos.
+          </h1>
+          <p class="leading-7 [&:not(:first-child)]:mt-6 text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            minima eaque porro maxime ea suscipit repudiandae vitae neque autem
+            assumenda?
+          </p>
+          <div class="text-center">
+            <button
+              class="flex items-center justify-center bg-white py-2 px-4 mt-4 rounded-md font-semibold"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="lg:container mx-auto mt-24">
+        <h2 class="font-semibold text-2xl md:hidden px-4">SO, WHO I AM?</h2>
+        <div
+          class="flex gap-2 h-full flex-col-reverse md:flex-row items-center justify-around px-4"
+        >
+          <div>
+            <h2 class="font-semibold hidden md:block text-2xl">
+              SO, WHO I AM?
+            </h2>
+            <p class="max-w-96 leading-7 [&:not(:first-child)]:mt-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+              veritatis qui minima eaque voluptates ab nihil dignissimos, vero
+              ad iste quaerat reprehenderit dolores recusandae odit tenetur,
+              sunt, fugiat ipsam quibusdam! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam ullam natus exercitationem
+              quod eveniet, incidunt laborum aliquid magni explicabo suscipit
+              quo provident quia ipsam sunt. Nesciunt assumenda earum
+              consequatur dolorum!
+            </p>
+            <button
+              class="flex items-center justify-center bg-black text-white py-2 px-4 mt-4 rounded-md font-semibold"
+            >
+              Buy Now
+            </button>
+          </div>
+          <div>
+            <img
+              class="md:h-[500px] w-full object-cover"
+              src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="lg:container mt-24 mx-auto px-10">
+        <div
+          class="flex gap-2 flex-col md:flex-row h-full items-center justify-around"
+        >
+          <h2 class="font-semibold text-2xl md:hidden">MY VISION</h2>
+          <div>
+            <img
+              class="h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover"
+              src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2 class="font-semibold text-2xl hidden md:block">MY VISION</h2>
+            <p class="max-w-96 leading-7 [&:not(:first-child)]:mt-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+              veritatis qui minima eaque voluptates ab nihil dignissimos, vero
+              ad iste quaerat reprehenderit dolores recusandae odit tenetur,
+              sunt, fugiat ipsam quibusdam! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam ullam natus exercitationem
+              quod eveniet, incidunt laborum aliquid magni explicabo suscipit
+              quo provident quia ipsam sunt. Nesciunt assumenda earum
+              consequatur dolorum!
+            </p>
+            <button
+              class="flex items-center justify-center bg-black text-white py-2 px-4 mt-4 rounded-md font-semibold"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full px-10 lg:container mx-auto mt-24 py-24 bg-cover bg-no-repeat bg-center bg-[url('https://images.unsplash.com/photo-1414759030024-7889df4b20f4?q=80&w=2112&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]"
+      >
+        <div
+          class="flex items-center flex-col gap-24 justify-center h-full text-white"
+        >
+          <h2 class="font-semibold text-4xl">How I Work</h2>
+          <ul class="flex gap-8 flex-col md:flex-row">
+            <li>
+              <div
+                class="flex justify-center items-center text-center md:justify-start md:text-left md:items-start flex-col gap-4"
+              >
+                <h3 class="text-4xl font-semibold">01</h3>
+                <p class="leading-7 md:[&:not(:first-child)]:mt-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+                  repudiandae?
+                </p>
+                <p class="leading-7">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti eligendi perferendis optio nihil harum. Illum a dolor
+                  facere cupiditate omnis
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                class="flex justify-center items-center text-center md:justify-start md:text-left md:items-start flex-col gap-4"
+              >
+                <h3 class="text-4xl font-semibold">02</h3>
+                <p class="leading-7 md:[&:not(:first-child)]:mt-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+                  repudiandae?
+                </p>
+                <p class="leading-7">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti eligendi perferendis optio nihil harum. Illum a dolor
+                  facere cupiditate omnis
+                </p>
+              </div>
+            </li>
+            <li>
+              <div
+                class="flex justify-center items-center text-center md:justify-start md:text-left md:items-start flex-col gap-4"
+              >
+                <h3 class="text-4xl font-semibold">03</h3>
+                <p class="leading-7 md:[&:not(:first-child)]:mt-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+                  repudiandae?
+                </p>
+                <p class="leading-7">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti eligendi perferendis optio nihil harum. Illum a dolor
+                  facere cupiditate omnis
+                </p>
+              </div>
+            </li>
+            <li>
+              <div
+                class="flex justify-center items-center text-center md:justify-start md:text-left md:items-start flex-col gap-4"
+              >
+                <h3 class="text-4xl font-semibold">04</h3>
+                <p class="leading-7 md:[&:not(:first-child)]:mt-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
+                  repudiandae?
+                </p>
+                <p class="leading-7">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti eligendi perferendis optio nihil harum. Illum a dolor
+                  facere cupiditate omnis
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="lg:container mt-24 mx-auto">
+        <div
+          class="flex h-full items-center justify-around px-4 flex-col-reverse pt-4 gap-4 md:flex-row"
+        >
+          <div>
+            <h2 class="font-semibold text-2xl hidden md:block">
+              BEHIND THE LENS
+            </h2>
+            <p class="max-w-96 leading-7 md:[&:not(:first-child)]:mt-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+              veritatis qui minima eaque voluptates ab nihil dignissimos, vero
+              ad iste quaerat reprehenderit dolores recusandae odit tenetur,
+              sunt, fugiat ipsam quibusdam! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quisquam ullam natus exercitationem
+              quod eveniet, incidunt laborum aliquid magni explicabo suscipit
+              quo provident quia ipsam sunt. Nesciunt assumenda earum
+              consequatur dolorum! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Provident eaque neque labore corporis tempore ut
+              rerum accusamus eius eos recusandae.
+            </p>
+            <p class="max-w-96 leading-7 [&:not(:first-child)]: mt-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+              sint molestiae qui ratione nobis. Beatae suscipit adipisci,
+            </p>
+            <button
+              class="flex items-center justify-center bg-black text-white py-2 px-4 mt-4 rounded-md font-semibold"
+            >
+              Buy Nowwaooso
+            </button>
+          </div>
+          <div>
+            <img
+              class="h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover"
+              src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <h2 class="font-semibold text-2xl block md:hidden">
+            BEHIND THE LENS
+          </h2>
+        </div>
+      </section>
+      <section class="lg:container mx-auto mt-24">
+        <div class="flex flex-col gap-4 items-center h-full">
+          <h3 class="text-2xl">MY WORKS</h3>
+          <div class="grid grid-cols-4 gap-4 px-4">
+            <div class="overflow-hidden">
+              <img
+                class="w-auto"
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                class="w-auto"
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                class="w-auto"
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                class="w-auto"
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+          </div>
+          <p class="text-center">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
+            pariatur, nobis quos alias necessitatibus dicta non ipsa illo et
+            corrupti, dolorum maxime eligendi eaque deserunt est officia quo
+            quisquam fuga.
+          </p>
+          <button
+            class="flex items-center justify-center bg-black text-white py-2 px-4 mt-4 rounded-md font-semibold"
+          >
+            Buy Now
+          </button>
+        </div>
+      </section>
+      <section class="lg:container mx-auto min-h-screen mt-24">
+        <div
+          class="flex h-full items-center md:flex-row justify-between flex-col-reverse px-4"
+        >
+          <div class="flex md:w-1/2 w-full flex-col gap-8">
+            <h2 class="font-semibold text-2xl hidden md:block">
+              Have Some Question?
+            </h2>
+            <form action="" class="flex flex-col w-full mt-4">
+              <label for="" class="block text-lg">name</label>
+              <input
+                type="text"
+                class="py-2 mb-2 px-1 border rounded-sm w-full"
+              />
+              <label for="" class="block mb-2 text-lg">Email</label>
+              <input
+                type="email"
+                class="py-2 mb-2 px-1 border rounded-sm w-full"
+              />
+              <label for="" class="block mb-2 text-lg">Message</label>
+              <input
+                type="text"
+                class="py-2 px-1 h-24 border rounded-sm w-full"
+              />
+              <div class="self-start md:self-end">
+                <button
+                  type="submit"
+                  class="flex w-24 items-center justify-center bg-black text-white py-2 px-4 mt-4 rounded-md font-semibold"
+                >
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+          <div>
+            <img
+              class="h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover"
+              src="https://images.unsplash.com/photo-1615828946017-19a26f36e789?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <h2 class="font-semibold text-2xl block md:hidden">
+            Have Some Question?
+          </h2>
+        </div>
+      </section>
+    </main>
+    <footer class="lg:container bg-black text-white mx-auto w-full h-72 mt-24">
+      <div class="flex justify-center flex-col items-center h-full">
+        <h4 class="text-2xl">Ethan Brocos</h4>
+        <ul
+          class="flex gap-2 justify-evenly pt-4 border-t border-white w-[90%]"
+        >
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+          <li>Lorem</li>
+        </ul>
+        <ul class="flex gap-2 justify-center pt-4">
+          <li>
+            <div class="w-8 h-8 rounded-full bg-white"></div>
+          </li>
+          <li>
+            <div class="w-8 h-8 rounded-full bg-white"></div>
+          </li>
+          <li>
+            <div class="w-8 h-8 rounded-full bg-white"></div>
+          </li>
+          <li>
+            <div class="w-8 h-8 rounded-full bg-white"></div>
+          </li>
+        </ul>
+        <p class="pt-8 text-center">Lorem ipsum dolor</p>
+      </div>
+    </footer>
+    <script src="test.js"></script>
+  </body>
+</html>
