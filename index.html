@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-WHPQGM0VV4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-WHPQGM0VV4");
-    </script>
-    <meta charset="UTF-8" />
-    <meta title="sharingcourse" />
+    <title>Sharing Free Course | Courspora</title>
+    <meta
+      name="description"
+      content="Temukan dan nikmati 100% kursus Udemy gratis hanya di Courspora! Pelajari keterampilan baru tanpa biaya dan tingkatkan karier Anda dengan kursus berkualitas dari berbagai kategori."
+    />
+    <meta
+      name="keywords"
+      content="kursus gratis, Udemy gratis, free Udemy course, belajar online, kursus online gratis, Courspora"
+    />
+    <meta name="author" content="Courspora" />
+    <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sharing Free Course</title>
+
+    <link
+      rel="icon"
+      href="https://courspora.my.id/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://courspora.my.id/favicon.ico"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +33,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-
+    <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -52,7 +58,7 @@
         "script",
         "https://connect.facebook.net/en_US/fbevents.js"
       );
-      fbq("init", "519832464236830");
+      fbq("init", "454319007623421");
       fbq("track", "PageView");
     </script>
     <noscript
@@ -60,18 +66,19 @@
         height="1"
         width="1"
         style="display: none"
-        src="https://www.facebook.com/tr?id=519832464236830&ev=PageView&noscript=1"
+        src="https://www.facebook.com/tr?id=454319007623421&ev=PageView&noscript=1"
     /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
 
   <body>
     <div
-      class="flex flex-col overflow-y-auto relative w-full justify-center min-h-screen bg-slate-700"
+      class="flex flex-col gap-12 relative w-full justify-center py-24 min-h-screen bg-slate-700"
     >
-      <div
-        class="text-white text-center container mx-auto space-y-8 max-w-xl px-4"
-      >
-        <div class="my-8">
+      <div class="text-center mx-auto flex flex-col gap-4">
+        <div
+          class="text-white text-center container mx-auto space-y-8 max-w-xl px-4"
+        >
           <img
             src="asset/udemylogo.png"
             alt="logo"
@@ -80,34 +87,58 @@
             height="100"
           />
         </div>
-        <h1 class="text-3xl font-bold text-white">
+        <h1 class="text-2xl text-white font-extrabold mb-2">
           Claim Your Free Udemy Course
         </h1>
-        <p>For Each Course Limited 1k Enroll Coupon. Lets Upgrade your Skill</p>
+        <p class="text-white">For Each Course Limited 1k Enroll Coupon</p>
 
         <button
           id="startenroll"
-          class="bg-white mx-auto hover:bg-black hover:text-white text-black py-4 px-4 mt-4 block rounded-md"
+          class="bg-white text-xl font-bold mx-auto hover:bg-black hover:text-white text-black py-4 px-4 mt-4 block rounded-md"
         >
-          Start Learning for Free!
+          Find Free Udemy Course
         </button>
-        <p class="text-white">@courspora - sharing web coupon platform</p>
+      </div>
+      <div class="text-center mx-auto flex flex-col gap-4 text-white">
+        <h2>Dont late the newest - Join Our Community</h2>
+        <div>
+          <ul>
+            <li>
+              <button
+                id="whatsappcome"
+                class="bg-[#25D366] text-xl font-bold mx-auto hover:bg-black/80 hover:text-white w-full text-white py-4 px-4 mt-4 block rounded-md"
+              >
+                Whatsapp
+              </button>
+              <button
+                id="telegramcome"
+                class="bg-[#229ED9] text-xl font-bold mx-auto hover:bg-black/80 hover:text-white w-full text-white py-4 px-4 mt-4 block rounded-md"
+              >
+                Telegram
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
+    <p class="absolute text-white bottom-8 right-0 left-0 text-center">
+      @courspora - sharing web coupon platform
+    </p>
 
     <script>
       document
         .getElementById("startenroll")
         .addEventListener("click", function () {
-          gtag("event", "click", {
-            event_category: "Button",
-            event_label: "Enroll Button",
-            value: "goto courspora",
-          });
           fbq("track", "Purchase", {
             value: 1,
           });
           window.open("https://www.courspora.my.id/course", "_blank");
+        });
+
+      document
+        .getElementById("telegramcome")
+        .addEventListener("click", function () {
+          window.open("https://t.me/udemycourspora", "_blank");
         });
     </script>
   </body>
