@@ -313,10 +313,18 @@
           fbq("track", "Purchase", {
             value: 1,
           });
+          gtag("event", "start_enroll", {
+            event_category: "enroll",
+            event_label: "start enroll from sharing course",
+          });
           window.open("https://www.courspora.my.id/course", "_self");
         });
 
       document.getElementById("support").addEventListener("click", function () {
+        gtag("event", "Support_click", {
+          event_category: "Support",
+          event_label: "click support from sharing course",
+        });
         window.open("https://www.saweria.co/undenkined", "_self");
       });
 
