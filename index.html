@@ -318,6 +318,21 @@
       document
         .getElementById("startenroll")
         .addEventListener("click", function () {
+          
+          ttq.track('ClickButton', {
+            "contents": [
+              {
+                "content_id": "123",
+                "content_type": "course",
+                "content_name": "freecourse"
+              }
+            ],
+            "value": 1,
+            "currency": "IDR"
+          });
+
+
+
           fbq("track", "Purchase", {
             value: 1,
           });
