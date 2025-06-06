@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courspora - Free Premium Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "519832464236830");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=519832464236830&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
     <script>
       !(function (w, d, t) {
         w.TiktokAnalyticsObject = t;
@@ -70,315 +110,533 @@
 
       gtag("config", "G-WHPQGM0VV4");
     </script>
-    <title>Sharing Free Course | Courspora</title>
-    <meta
-      name="description"
-      content="Temukan dan nikmati 100% kursus Udemy gratis hanya di Courspora! Pelajari keterampilan baru tanpa biaya dan tingkatkan karier Anda dengan kursus berkualitas dari berbagai kategori."
-    />
-    <meta
-      name="keywords"
-      content="kursus gratis, Udemy gratis, free Udemy course, belajar online, kursus online gratis, Courspora"
-    />
-    <meta name="author" content="Courspora" />
-    <meta name="robots" content="index, follow" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 
-    <link
-      rel="icon"
-      href="https://courspora.my.id/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="https://courspora.my.id/favicon.ico"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Meta Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "519832464236830");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none"
-        src="https://www.facebook.com/tr?id=519832464236830&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      .pulse-button {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(33, 53, 84, 0.7);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 10px rgba(33, 53, 84, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(33, 53, 84, 0);
+        }
+      }
+
+      .floating {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .shimmer {
+        background: linear-gradient(
+          45deg,
+          transparent 30%,
+          rgba(255, 255, 255, 0.5) 50%,
+          transparent 70%
+        );
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite;
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+
+      .count-up {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .glow-effect {
+        box-shadow: 0 0 20px rgba(33, 53, 84, 0.3);
+      }
+    </style>
   </head>
-
-  <body>
-    <main class="bg-white flex-col flex items-center min-h-screen">
-      <header class="container px-4 py-12 lg:py-32">
-        <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 items-center">
+  <body class="bg-gray-50">
+    <!-- Hero Section -->
+    <main
+      class="bg-gradient-to-br from-blue-50 via-white to-purple-50 min-h-screen"
+    >
+      <header class="container mx-auto px-4 py-8 lg:py-16">
+        <div class="grid md:grid-cols-2 gap-8 xl:gap-20 items-center">
           <div
             class="flex flex-col md:justify-center md:items-start items-center justify-center"
           >
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 text-blue-800 text-sm font-medium mb-6"
+            >
+              🎓 Trusted by 50,000+ learners
+            </div>
+
             <h1
-              class="scroll-m-20 text-[#213554] text-5xl font-extrabold tracking-tight lg:text-5xl"
+              class="text-6xl md:text-7xl font-black text-gray-900 mb-6 leading-tight"
             >
-              COURSPORA
+              COURS<span
+                class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                >PORA</span
+              >
             </h1>
+
             <p
-              class="my-3 lg:my-0 lg:mt-3 text-lg text-center md:text-left text-[#213554]"
+              class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed text-center md:text-left"
             >
-              At Courspora, we believe that everyone deserves the opportunity to
-              learn at no cost. We want to make education accessible to
-              everyone, regardless of where you come from or your background
+              Unlock
+              <span class="font-bold text-blue-600">premium courses</span> worth
+              $2,000+ absolutely free. Start learning today and transform your
+              career.
             </p>
+
+            <!-- Stats -->
+            <div class="flex gap-8 mb-8">
+              <div class="text-center">
+                <div
+                  class="text-3xl font-bold text-blue-600 count-up"
+                  data-target="1029"
+                >
+                  0
+                </div>
+                <div class="text-sm text-gray-500">Free Courses</div>
+              </div>
+              <div class="text-center">
+                <div
+                  class="text-3xl font-bold text-purple-600 count-up"
+                  data-target="3100"
+                >
+                  0
+                </div>
+                <div class="text-sm text-gray-500">Happy Students</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-green-600">100%</div>
+                <div class="text-sm text-gray-500">Free Forever</div>
+              </div>
+            </div>
+
+            <!-- Main CTA -->
+            <div class="w-full max-w-md">
+              <button
+                id="startenroll"
+                class="w-full text-xl font-bold py-4 px-8 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl pulse-button glow-effect mb-4"
+              >
+                🚀 Get Free Premium Courses Now
+              </button>
+
+              <p class="text-center text-sm text-gray-500 mb-6">
+                ⏰ Limited time offer • No credit card required
+              </p>
+
+              <!-- Social Channels -->
+              <h3 class="text-lg font-bold text-gray-800 mb-4 text-center">
+                📢 Get Instant Updates
+              </h3>
+
+              <div class="flex gap-3">
+                <a
+                  href="hhttps://www.whatsapp.com/channel/0029VarGwReL2AU5FNaZVZ2J"
+                  class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-md"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+                    />
+                  </svg>
+                  WhatsApp
+                </a>
+
+                <a
+                  href="https://web.facebook.com/profile.php/?id=61566002593763&_rdc=1&_rdr"
+                  class="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 shadow-md"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                  Facebook
+                </a>
+              </div>
+            </div>
           </div>
+
           <div class="flex items-center justify-center">
-            <image
-              class="rounded-md w-52 h-52 md:w-72 md:h-72"
-              src="https://courspora.my.id/projecthero.svg"
-              alt="faq"
-              priority
-              width="{300}"
-              height="{300}"
-            />
-          </div>
-        </div>
-        <div
-          class="w-full flex flex-col md:flex-row md:items-center max-w-xl gap-2"
-        >
-          <div class="flex flex-col gap-4">
-            <p class="text-sm text-[#213554] font-bold">
-              *courspora just sharing 100% free udemy coupons platform
-            </p>
-            <button
-              id="startenroll"
-              class="text-xl border h-16 w-full px-4 shadow-md mx-auto md:mx-0 font-bold tracking-tight px-3 py-2 rounded-lg bg-[#213554] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
-            >
-              Claim Your Free Course Now
-            </button>
-            <h3
-              class="scroll-m-20 mt-4 text-[#213554] text-center md:text-left text-xl font-extrabold tracking-tight lg:text-2xl"
-            >
-              Join Our Channel to Get News
-            </h3>
-            <div class="flex gap-2 items-center">
-              <a
-                href="https://whatsapp.com/channel/0029VarGwReL2AU5FNaZVZ2J"
-                id="joinwa"
-                class="text-xl border w-full px-4 border w-full shadow-md mx-auto md:mx-0 font-bold tracking-tight px-3 py-2 rounded-lg bg-[#25D366] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
-              >
-                Whatsapp
-              </a>
-              <a
-                id="joinfb"
-                href="https://web.facebook.com/profile.php/?id=61566002593763&_rdc=1&_rdr"
-                class="text-xl border w-full px-4 border w-full shadow-md mx-auto md:mx-0 font-bold tracking-tight px-3 py-2 rounded-lg bg-[#1877F2] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
-              >
-                facebook
-              </a>
+            <div class="relative">
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-full blur-3xl opacity-30 floating"
+              ></div>
+              <img
+                class="relative rounded-3xl w-72 h-72 md:w-96 md:h-96 object-cover shadow-2xl floating"
+                src="/asset/hero.png"
+                alt="Learning illustration"
+              />
             </div>
           </div>
         </div>
       </header>
 
-      <div class="container py-8 lg:py-32">
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
-          <div class="text-center">
+      <!-- Features Section -->
+      <div class="container mx-auto px-4 py-16">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">
+            Why Choose Courspora?
+          </h2>
+          <p class="text-xl text-gray-600">
+            Everything you need to succeed in your learning journey
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            class="text-center p-6 bg-white rounded-2xl shadow-lg card-hover"
+          >
             <div
-              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
+              class="flex justify-center items-center w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl mx-auto mb-6"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                class="w-10 h-10 text-white"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-gem flex-shrink-0 w-8 md:w-12 h-8 md:h-12 text-white"
-              >
-                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
-                <path d="M11 3 8 9l4 13 4-13-3-6"></path>
-                <path d="M2 9h20"></path>
-              </svg>
-            </div>
-            <div class="mt-3">
-              <h2 class="text-lg font-bold text-[#213554] text-white">Free</h2>
-              <p class="mt-1 text-muted-foreground">
-                All Course bundles are free to use
-              </p>
-            </div>
-          </div>
-          <div class="text-center">
-            <div
-              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
                 viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-calendar-clock flex-shrink-0 w-8 md:w-12 h-8 md:h-12 text-white"
               >
                 <path
-                  d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
-                <path d="M16 2v4"></path>
-                <path d="M8 2v4"></path>
-                <path d="M3 10h5"></path>
-                <path d="M17.5 17.5 16 16.3V14"></path>
-                <circle cx="16" cy="16" r="6"></circle>
               </svg>
             </div>
-            <div class="mt-3">
-              <h2 class="text-lg font-bold text-[#213554] text-white">
-                Access Lifetime
-              </h2>
-              <p class="mt-1 text-muted-foreground">
-                learn from anywhere without expired time
-              </p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">100% Free</h3>
+            <p class="text-gray-600">
+              Premium courses worth thousands of dollars, completely free
+              forever
+            </p>
           </div>
-          <div class="text-center">
+
+          <div
+            class="text-center p-6 bg-white rounded-2xl shadow-lg card-hover"
+          >
             <div
-              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
+              class="flex justify-center items-center w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl mx-auto mb-6"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                class="w-10 h-10 text-white"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-badge-check flex-shrink-0 w-8 md:w-12 h-8 md:h-12 text-white"
+                viewBox="0 0 24 24"
               >
                 <path
-                  d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
-                <path d="m9 12 2 2 4-4"></path>
               </svg>
             </div>
-            <div class="mt-3">
-              <h2 class="text-lg font-bold text-[#213554] text-white">
-                High Quality
-              </h2>
-              <p class="mt-1 text-muted-foreground">
-                Our courses are of high quality.
-              </p>
-            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Lifetime Access
+            </h3>
+            <p class="text-gray-600">
+              Learn at your own pace with unlimited access to all course
+              materials
+            </p>
           </div>
-          <div class="text-center">
+
+          <div
+            class="text-center p-6 bg-white rounded-2xl shadow-lg card-hover"
+          >
             <div
-              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
+              class="flex justify-center items-center w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl mx-auto mb-6"
             >
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
+                class="w-10 h-10 text-white"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-graduation-cap flex-shrink-0 w-12 h-12 text-white"
+                viewBox="0 0 24 24"
               >
                 <path
-                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                 ></path>
-                <path d="M22 10v6"></path>
-                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
               </svg>
             </div>
-            <div class="mt-3">
-              <h2 class="text-lg font-bold text-[#213554] text-white">
-                Certified
-              </h2>
-              <p class="mt-1 text-muted-foreground">
-                Most courses include certificates.
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Premium Quality
+            </h3>
+            <p class="text-gray-600">
+              Hand-picked courses from top instructors and industry experts
+            </p>
+          </div>
+
+          <div
+            class="text-center p-6 bg-white rounded-2xl shadow-lg card-hover"
+          >
+            <div
+              class="flex justify-center items-center w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl mx-auto mb-6"
+            >
+              <svg
+                class="w-10 h-10 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z M12 14l-6.16-3.422a12.083 12.083 0 01.665 6.479 11.952 11.952 0 006.824 2.998 11.952 11.952 0 006.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Certificates</h3>
+            <p class="text-gray-600">
+              Earn industry-recognized certificates to boost your career
+              prospects
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="container mx-auto px-4 py-16">
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div
+                class="inline-flex items-center px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-medium mb-6"
+              >
+                💡 About Courspora
+              </div>
+
+              <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Your Gateway to <span class="text-blue-600">Free Learning</span>
+              </h3>
+
+              <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Courspora is your trusted platform for accessing premium
+                educational content without any cost. We partner with top
+                educators to bring you the best learning experiences, from
+                beginner tutorials to advanced masterclasses.
               </p>
+
+              <div class="space-y-4 mb-8">
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700"
+                    >Updated daily with fresh content</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700"
+                    >Community of passionate learners</span
+                  >
+                </div>
+                <div class="flex items-center gap-3">
+                  <div
+                    class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center"
+                  >
+                    <svg
+                      class="w-4 h-4 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 13l4 4L19 7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="text-gray-700">24/7 support and assistance</span>
+                </div>
+              </div>
+
+              <a
+                href="https://courspora.my.id/faq"
+                class="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
+              >
+                📚 Explore FAQ
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="flex justify-center">
+              <div class="relative">
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-600 rounded-3xl blur-2xl opacity-20"
+                ></div>
+                <img
+                  class="relative rounded-2xl w-80 h-80 object-cover shadow-2xl"
+                  src="/asset/faq.png"
+                  alt="FAQ illustration"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container px-4 py-4">
-        <h3
-          class="scroll-m-20 text-center md:text-left text-primary pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+
+      <!-- Final CTA Section -->
+      <div class="container mx-auto px-4 py-16">
+        <div
+          class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-16 text-center text-white"
         >
-          What is Exactly Courspora?
-        </h3>
-        <div class="flex flex-col-reverse gap-4 md:flex-row">
-          <div class="md:w-1/2 space-y-2">
-            <p
-              class="scroll-m-20 text-center md:text-left md:text-xl font-semibold tracking-tight"
-            >
-              Welcome to courspora, your go-to hub for free coupons on top-tier
-              courses.Discover all the best deals in one place and elevate your
-              skills.Got questions? Head over to our FAQ page for answers.
-            </p>
-            <a
-              href="https://courspora.my.id/faq"
-              class="px-3 py-2 text-bold mx-auto md:mx-0 rounded-lg bg-[#213554] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
-            >
-              See Faq Page
-            </a>
-          </div>
-          <div class="flex justify-center md:w-1/2">
-            <img
-              alt="faq"
-              fetchpriority="high"
-              width="300"
-              height="300"
-              decoding="async"
-              data-nimg="1"
-              class="rounded-md w-52 h-52 md:w-64 md:h-6w-64"
-              style="color: transparent"
-              src="https://courspora.my.id/faq.svg"
-            />
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Start Learning?
+          </h2>
+          <p class="text-xl mb-8 opacity-90">
+            Join thousands of learners who are already transforming their
+            careers
+          </p>
+
+          <button
+            class="bg-white text-blue-600 hover:bg-gray-100 font-bold text-xl py-4 px-12 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg mb-6 shimmer"
+          >
+            🎯 Start Your Journey Now
+          </button>
+
+          <div
+            class="flex items-center justify-center gap-8 text-sm opacity-75"
+          >
+            <span>✅ No Registration Required</span>
+            <span>✅ Instant Access</span>
+            <span>✅ 100% Free</span>
           </div>
         </div>
       </div>
     </main>
 
     <script>
+      // Counter animation
+      function animateCounter(element, target, duration = 2000) {
+        const start = 0;
+        const startTime = Date.now();
+
+        function update() {
+          const elapsed = Date.now() - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+          const current = Math.floor(easeOutQuart * target);
+
+          element.textContent = current.toLocaleString();
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          }
+        }
+
+        update();
+      }
+
+      // Start counters when page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".count-up");
+        counters.forEach((counter) => {
+          const target = parseInt(counter.getAttribute("data-target"));
+          animateCounter(counter, target);
+        });
+      });
+
+      // Add click handlers for buttons
       document
         .getElementById("startenroll")
         .addEventListener("click", function () {
@@ -404,27 +662,42 @@
           window.open("https://www.courspora.my.id/course", "_self");
         });
 
-      document.getElementById("support").addEventListener("click", function () {
-        gtag("event", "Support_click", {
-          event_category: "Support",
-          event_label: "click support from sharing course",
+      // Add smooth scrolling for better UX
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
         });
-        window.open("https://www.saweria.co/undenkined", "_self");
       });
 
-      document
-        .getElementById("telegramcome")
-        .addEventListener("click", function () {
-          window.open("https://t.me/udemycourspora");
-        });
+      // Add intersection observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
 
-      document
-        .getElementById("whatsappcome")
-        .addEventListener("click", function () {
-          window.open(
-            "https://www.whatsapp.com/channel/0029VarGwReL2AU5FNaZVZ2J"
-          );
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
         });
+      }, observerOptions);
+
+      // Observe elements for animation
+      document.querySelectorAll(".card-hover").forEach((card) => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(30px)";
+        card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
+        observer.observe(card);
+      });
     </script>
   </body>
 </html>

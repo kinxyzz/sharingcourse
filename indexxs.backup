@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+          "holdConsent",
+          "revokeConsent",
+          "grantConsent",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var r = "https://analytics.tiktok.com/i18n/pixel/events.js",
+              o = n && n.partner;
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = r),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            n = document.createElement("script");
+            (n.type = "text/javascript"),
+              (n.async = !0),
+              (n.src = r + "?sdkid=" + e + "&lib=" + t);
+            e = document.getElementsByTagName("script")[0];
+            e.parentNode.insertBefore(n, e);
+          });
+
+        ttq.load("CUUBSA3C77UAVCG33D50");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WHPQGM0VV4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WHPQGM0VV4");
+    </script>
+    <title>Sharing Free Course | Courspora</title>
+    <meta
+      name="description"
+      content="Temukan dan nikmati 100% kursus Udemy gratis hanya di Courspora! Pelajari keterampilan baru tanpa biaya dan tingkatkan karier Anda dengan kursus berkualitas dari berbagai kategori."
+    />
+    <meta
+      name="keywords"
+      content="kursus gratis, Udemy gratis, free Udemy course, belajar online, kursus online gratis, Courspora"
+    />
+    <meta name="author" content="Courspora" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="https://courspora.my.id/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://courspora.my.id/favicon.ico"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "519832464236830");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=519832464236830&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body>
+    <main class="bg-white flex-col flex items-center min-h-screen">
+      <header class="container px-4 py-12 lg:py-32">
+        <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 items-center">
+          <div
+            class="flex flex-col md:justify-center md:items-start items-center justify-center"
+          >
+            <h1
+              class="scroll-m-20 text-[#213554] text-5xl font-extrabold tracking-tight lg:text-5xl"
+            >
+              COURSPORA
+            </h1>
+            <p
+              class="my-3 lg:my-0 lg:mt-3 text-lg text-center md:text-left text-[#213554]"
+            >
+              At Courspora, we believe that everyone deserves the opportunity to
+              learn at no cost. We want to make education accessible to
+              everyone, regardless of where you come from or your background
+            </p>
+          </div>
+          <div class="flex items-center justify-center">
+            <image
+              class="rounded-md w-52 h-52 md:w-72 md:h-72"
+              src="https://courspora.my.id/projecthero.svg"
+              alt="faq"
+              priority
+              width="{300}"
+              height="{300}"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col md:flex-row md:items-center max-w-xl gap-2"
+        >
+          <div class="flex flex-col gap-4">
+            <p class="text-sm text-[#213554] font-bold">
+              *courspora just sharing 100% free udemy coupons platform
+            </p>
+            <button
+              id="startenroll"
+              class="text-xl border h-16 w-full px-4 shadow-md mx-auto md:mx-0 font-bold tracking-tight px-3 py-2 rounded-lg bg-[#213554] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
+            >
+              Claim Your Free Course Now
+            </button>
+            <h3
+              class="scroll-m-20 mt-4 text-[#213554] text-center md:text-left text-xl font-extrabold tracking-tight lg:text-2xl"
+            >
+              Join Our Channel to Get News
+            </h3>
+            <div class="flex gap-2 items-center">
+              <a
+                href="https://whatsapp.com/channel/0029VarGwReL2AU5FNaZVZ2J"
+                id="joinwa"
+                class="text-xl border w-full px-4 border w-full shadow-md mx-auto md:mx-0 font-bold tracking-tight px-3 py-2 rounded-lg bg-[#25D366] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
+              >
+                Whatsapp
+              </a>
+              <a
+                id="joinfb"
+                href=""
+                class="text-xl border w-full px-4 border w-full shadow-md mx-auto md:mx-0 font-bold tracking-tight px-3 py-2 rounded-lg bg-[#1877F2] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
+              >
+                facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container py-8 lg:py-32">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
+          <div class="text-center">
+            <div
+              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-gem flex-shrink-0 w-8 md:w-12 h-8 md:h-12 text-white"
+              >
+                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                <path d="M11 3 8 9l4 13 4-13-3-6"></path>
+                <path d="M2 9h20"></path>
+              </svg>
+            </div>
+            <div class="mt-3">
+              <h2 class="text-lg font-bold text-[#213554] text-white">Free</h2>
+              <p class="mt-1 text-muted-foreground">
+                All Course bundles are free to use
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <div
+              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-calendar-clock flex-shrink-0 w-8 md:w-12 h-8 md:h-12 text-white"
+              >
+                <path
+                  d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"
+                ></path>
+                <path d="M16 2v4"></path>
+                <path d="M8 2v4"></path>
+                <path d="M3 10h5"></path>
+                <path d="M17.5 17.5 16 16.3V14"></path>
+                <circle cx="16" cy="16" r="6"></circle>
+              </svg>
+            </div>
+            <div class="mt-3">
+              <h2 class="text-lg font-bold text-[#213554] text-white">
+                Access Lifetime
+              </h2>
+              <p class="mt-1 text-muted-foreground">
+                learn from anywhere without expired time
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <div
+              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-badge-check flex-shrink-0 w-8 md:w-12 h-8 md:h-12 text-white"
+              >
+                <path
+                  d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+                ></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="mt-3">
+              <h2 class="text-lg font-bold text-[#213554] text-white">
+                High Quality
+              </h2>
+              <p class="mt-1 text-muted-foreground">
+                Our courses are of high quality.
+              </p>
+            </div>
+          </div>
+          <div class="text-center">
+            <div
+              class="flex bg-[#213554] text-white justify-center items-center w-16 md:w-24 h-16 md:h-24 rounded-lg mx-auto"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-graduation-cap flex-shrink-0 w-12 h-12 text-white"
+              >
+                <path
+                  d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                ></path>
+                <path d="M22 10v6"></path>
+                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+              </svg>
+            </div>
+            <div class="mt-3">
+              <h2 class="text-lg font-bold text-[#213554] text-white">
+                Certified
+              </h2>
+              <p class="mt-1 text-muted-foreground">
+                Most courses include certificates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-4 py-4">
+        <h3
+          class="scroll-m-20 text-center md:text-left text-primary pb-2 text-3xl font-semibold tracking-tight first:mt-0"
+        >
+          What is Exactly Courspora?
+        </h3>
+        <div class="flex flex-col-reverse gap-4 md:flex-row">
+          <div class="md:w-1/2 space-y-2">
+            <p
+              class="scroll-m-20 text-center md:text-left md:text-xl font-semibold tracking-tight"
+            >
+              Welcome to courspora, your go-to hub for free coupons on top-tier
+              courses.Discover all the best deals in one place and elevate your
+              skills.Got questions? Head over to our FAQ page for answers.
+            </p>
+            <a
+              href="https://courspora.my.id/faq"
+              class="px-3 py-2 text-bold mx-auto md:mx-0 rounded-lg bg-[#213554] text-white w-fit flex items-center justify-center hover:bg-white border hover:border-[#213554] text-white hover:text-[#213554] text-white"
+            >
+              See Faq Page
+            </a>
+          </div>
+          <div class="flex justify-center md:w-1/2">
+            <img
+              alt="faq"
+              fetchpriority="high"
+              width="300"
+              height="300"
+              decoding="async"
+              data-nimg="1"
+              class="rounded-md w-52 h-52 md:w-64 md:h-6w-64"
+              style="color: transparent"
+              src="https://courspora.my.id/faq.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document
+        .getElementById("startenroll")
+        .addEventListener("click", function () {
+          ttq.track("ClickButton", {
+            contents: [
+              {
+                content_id: "123",
+                content_type: "course",
+                content_name: "freecourse",
+              },
+            ],
+            value: 1,
+            currency: "IDR",
+          });
+
+          fbq("track", "Purchase", {
+            value: 1,
+          });
+          gtag("event", "start_enroll", {
+            event_category: "enroll",
+            event_label: "start enroll from sharing course",
+          });
+          window.open("https://www.courspora.my.id/course", "_self");
+        });
+
+      document.getElementById("support").addEventListener("click", function () {
+        gtag("event", "Support_click", {
+          event_category: "Support",
+          event_label: "click support from sharing course",
+        });
+        window.open("https://www.saweria.co/undenkined", "_self");
+      });
+
+      document
+        .getElementById("telegramcome")
+        .addEventListener("click", function () {
+          window.open("https://t.me/udemycourspora");
+        });
+
+      document
+        .getElementById("whatsappcome")
+        .addEventListener("click", function () {
+          window.open("");
+        });
+    </script>
+  </body>
+</html>
