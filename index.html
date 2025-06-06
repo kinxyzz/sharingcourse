@@ -115,6 +115,10 @@
 
       * {
         font-family: "Inter", sans-serif;
+        border: none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
       .gradient-bg {
@@ -254,10 +258,12 @@
             </div>
 
             <!-- Main CTA -->
-            <div class="w-full max-w-md">
+            <div
+              class="flex flex-col items-center justify-center w-full max-w-md"
+            >
               <button
                 id="startenroll"
-                class="w-full text-xl font-bold py-4 px-8 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl pulse-button glow-effect mb-4"
+                class="w-[90%] font-bold py-4 px-8 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl pulse-button glow-effect mb-4"
               >
                 🚀 Get Free Premium Courses Now
               </button>
@@ -589,6 +595,7 @@
           </p>
 
           <button
+            id="startjourney"
             class="bg-white text-blue-600 hover:bg-gray-100 font-bold text-xl py-4 px-12 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg mb-6 shimmer"
           >
             🎯 Start Your Journey Now
@@ -606,7 +613,6 @@
     </main>
 
     <script>
-      // Counter animation
       function animateCounter(element, target, duration = 2000) {
         const start = 0;
         const startTime = Date.now();
@@ -627,7 +633,6 @@
         update();
       }
 
-      // Start counters when page loads
       document.addEventListener("DOMContentLoaded", function () {
         const counters = document.querySelectorAll(".count-up");
         counters.forEach((counter) => {
@@ -636,7 +641,31 @@
         });
       });
 
-      // Add click handlers for buttons
+      document
+        .getElementById("startjourney")
+        .addEventListener("click", function () {
+          ttq.track("ClickButton", {
+            contents: [
+              {
+                content_id: "123",
+                content_type: "course",
+                content_name: "freecourse",
+              },
+            ],
+            value: 1,
+            currency: "IDR",
+          });
+
+          fbq("track", "Purchase", {
+            value: 1,
+          });
+          gtag("event", "start_enroll", {
+            event_category: "enroll",
+            event_label: "start enroll from sharing course",
+          });
+          window.open("https://www.courspora.my.id/course", "_self");
+        });
+
       document
         .getElementById("startenroll")
         .addEventListener("click", function () {
@@ -662,7 +691,6 @@
           window.open("https://www.courspora.my.id/course", "_self");
         });
 
-      // Add smooth scrolling for better UX
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -676,7 +704,6 @@
         });
       });
 
-      // Add intersection observer for animations
       const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
@@ -690,8 +717,6 @@
           }
         });
       }, observerOptions);
-
-      // Observe elements for animation
       document.querySelectorAll(".card-hover").forEach((card) => {
         card.style.opacity = "0";
         card.style.transform = "translateY(30px)";
